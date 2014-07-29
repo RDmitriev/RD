@@ -6,7 +6,7 @@
 	<title>Putto CSS-Framework</title>
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="putto/putto.css">
+	<link rel="stylesheet" href="/putto/putto.css">
 	<style>
 		body{background-color: #e5e5e5;font: 20px 'Roboto';}
 		.line{margin:0 auto;max-width:1100px;height:1000px;}
@@ -20,45 +20,27 @@
 	<div class="line">
 		<div class="row"><div class="col-1 center"><h1>Putto CSS-Framework <sup>beta</sup></h1></div></div>
 		
-		<div class="row x-right">
-			<img src="Acorn256.png">
-		</div>
-		
-		<div class="row autorow">
-			<div class="col-1 box center"><img src="Acorn256.png"><br>Тестоваое описние картинки</div>
-			<div class="col-1 box center"><img src="Acorn256.png"><br>Тестоваое описние картинкиТестоваое описние картинки</div>
-			<div class="col-1 box center"><img src="Acorn256.png"><br>Тестоваое описние картинкиТестоваое описние картинкиТестоваое описние картинки</div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-			<div class="col-1 box center"><img src="Acorn256.png"></div>
-		</div>
-		
 		<div class="row">
 			<div class="col-1 box center">
-				<img src="responsive.png">
+				<img src="/images/responsive.png">
 				<h3>Responsive</h3>
 				<p>Mobile and tablet friendly</p>
 			</div>
 			
 			<div class="col-1 box center">
-				<img src="columns.png">
+				<img src="/images/columns.png">
 				<h3>Unlimited columns</h3>
 				Widescreen monitor? No problem!
 			</div>
 			
 			<div class="col-1 box center">
-				<img src="deployment.png">
+				<img src="/images/deployment.png">
 				<h3>Fast deployment</h3>
 				<p>Build the architecture of your site in a few minutes!</p>
 			</div>
 			
 			<div class="col-1 box center">
-				<img src="innovation.png">
+				<img src="/images/innovation.png">
 				<h3>Innovation</h3>
 				<p>Putto framework uses the latest technology CSS3 (Flexbox)</p>
 			</div>
@@ -217,7 +199,7 @@
 		
 		<div class="row">
 			<div class="col-1 box center">
-				<form>
+				<form class="form">
 					<input type="text" placeholder="Text">
 					<input type="password" placeholder="Password">
 					<textarea placeholder="Textarea"></textarea>
@@ -232,7 +214,7 @@
 		
 		<div class="row">
 			<div class="col-1 box center">
-				<table>
+				<table class="table">
 					<tr>
 						<td>id</td>
 						<td>Client</td>
