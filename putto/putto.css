@@ -13,9 +13,10 @@
 */
 
 body {
-	line-height: 1;		
+	line-height: 1;
 	font: 14px Arial;
-	color: #404040;line-height:20px;
+	color: #404040;
+	line-height:20px;
 }
 
 a {
@@ -126,7 +127,7 @@ mark {
 }
 
 .table tr:first-child {
-	font-weight:bold;
+	font-weight: bold;
 	background-color: #e5e5e5;
 }
 
@@ -235,7 +236,7 @@ mark {
 
 .ul {
 	list-style-position: inside;
-	list-style:none;
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
@@ -243,7 +244,6 @@ mark {
 .ul li {
 	list-style-position: inside;
 	padding: 5px 0;
-	
 }
 
 .ul ul {
