@@ -5,7 +5,7 @@ Putto CSS-Framework
 
 Documentation
 ----
-[putto.ru]
+[http://putto.ru]
 
 
 Install
@@ -19,5 +19,5 @@ Install
 ```
  - Done!
 
-[putto.ru]:https://github.com/RDmitriev/Putto/archive/master.zip
+[http://putto.ru]:https://github.com/RDmitriev/Putto/archive/master.zip
 [Putto]:https://github.com/RDmitriev/Putto/archive/master.zip
