@@ -1,11 +1,10 @@
 *, *:after, *:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,button{margin:0;padding:0;}input,select,a img{vertical-align:middle;}
-	
+
 /*
-	* Putto v0.1
+	* Putto v0.2
 */
 
-::selection
-{
+::selection {
 	background-color: #e5e5e5;
 }
 
@@ -13,54 +12,76 @@
 	Typography
 */
 
-body
-{
+body {
 	line-height: 1;		
 	font: 14px Arial;
 	color: #404040;line-height:20px;
 }
 
-a
-{
+a {
 	font: 14px Arial;
 	color: #427fed;
 	text-decoration: none;
 }
 
-a:hover
-{
+a:hover {
 	color: #404040;
 	text-decoration: underline;
 }
 
-p
-{
-	padding-bottom: 15px;
-	
-}
-
-h1
-{
-	font: 20px Arial;
+p {
 	padding-bottom: 15px;
 }
 
-h2
-{
-	font: bold 16px Arial;
-	padding-bottom: 10px;
+p:last-of-type {
+	padding-bottom: 0;
 }
 
-h3
-{
-	font: bold 14px Arial;
-	padding-bottom: 10px;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+	font-weight: 400;
+	line-height: 1;
+	color: #777;
 }
 
 ul, ol{
 	margin-left: 50px;
 	margin-bottom: 15px;
 }
+
+mark {
+	color: #000;
+	background: #ff0;
+}
+
 /*
 	Box
 */
@@ -78,8 +99,7 @@ ul, ol{
 	Breadcrumbs
 */
 
-.breadcrumbs
-{
+.breadcrumbs {
 	list-style: none;
 	padding: 8px 15px;
 	margin: 0;
@@ -88,13 +108,11 @@ ul, ol{
 	background-color: #e5e5e5;
 }
 
-.breadcrumbs>li
-{
+.breadcrumbs>li {
 	display: inline-block;
 }
 
-.breadcrumbs>li+li:before
-{
+.breadcrumbs>li+li:before {
 	content: "/\00a0";
 	padding: 0 5px;
 }
@@ -103,24 +121,20 @@ ul, ol{
 	Table
 */
 
-.table
-{
+.table {
 	width: 100%;
 }
 
-.table tr:first-child
-{
+.table tr:first-child {
 	font-weight:bold;
 	background-color: #e5e5e5;
 }
 
-.table tr:nth-child(odd):not(:first-child)
-{
+.table tr:nth-child(odd):not(:first-child) {
 	background-color: #f5f5f5;
 }
 
-.table td
-{
+.table td {
 	padding: 5px;
 }
 
@@ -128,28 +142,24 @@ ul, ol{
 	Form
 */
 
-.form input, .form textarea
-{
+.form input, .form textarea {
 	outline: none;
 	display: block;
 	margin: 10px 0;
 }
 
-.form input[type=submit]
-{
+.form input[type=submit] {
 	outline: none;
 	display: block;
 	margin: 10px 0;
 }
 
-.form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus, .form button:hover, .form button:focus
-{
+.form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus, .form button:hover, .form button:focus {
 	border: 1px solid #b8b8b8;
 	background-color: #f5f5f5;
 }
 
-.form input[type=text], .form input[type=email], .form input[type=password], .form textarea, .form select
-{
+.form input[type=text], .form input[type=email], .form input[type=password], .form textarea, .form select {
 	width: 100%;
 	border: 1px solid #d8d8d8;
 	padding: 5px;
@@ -158,14 +168,12 @@ ul, ol{
 	border-radius: 2px;
 }
 
-.form textarea
-{
+.form textarea {
 	height: 100px;
 	resize: none;
 }
 
-.form input[type=submit], .form input[type=button], .form button
-{
+.form input[type=submit], .form input[type=button], .form button {
 	border: 1px solid #d8d8d8;
 	cursor: pointer;
 	padding: 5px 10px;
@@ -174,18 +182,15 @@ ul, ol{
 	background-color: #ffffff;
 }
 
-.form input[type=submit]:hover, .form input[type=button]:hover, .form button:hover
-{
+.form input[type=submit]:hover, .form input[type=button]:hover, .form button:hover {
 	opacity: 0.9;
 }
 
-.form input[type=checkbox]
-{
+.form input[type=checkbox] {
 	display: inline;
 }
 
-.form input[type=file]
-{
+.form input[type=file] {
 	border: 0px;
 	background-color: transparent;
 }
@@ -209,20 +214,17 @@ ul, ol{
 	color: #fff;
 }
 
-.btn-success
-{
+.btn-success {
 	color: #fff;
 	background-color: #53a93f !important;
 }
 
-.btn-danger
-{
+.btn-danger {
 	color: #fff;
 	background-color: #dd4b39 !important;
 }
 
-.btn-blue
-{
+.btn-blue {
 	color: #fff;
 	background-color: #427fed !important;
 }
@@ -231,45 +233,38 @@ ul, ol{
 	Ul
 */
 
-.ul
-{
+.ul {
 	list-style-position: inside;
 	list-style:none;
 	padding: 0;
 	margin: 0;
 }
 
-.ul li
-{
+.ul li {
 	list-style-position: inside;
 	padding: 5px 0;
 	
 }
 
-.ul ul
-{
+.ul ul {
 	list-style:none;
 }
 
-.ul ul li
-{
+.ul ul li {
 	margin-left: 10px;
 }
 
-.ul a
-{
+.ul a {
 	font: bold 12px Arial;
 	color: #737373;
 	text-decoration: none;
 }
 
-.ul a:hover
-{
+.ul a:hover {
 	color: #424242;
 }
 
-.ul ul a
-{
+.ul ul a {
 	font: 12px Arial;
 	color: #424242;
 }
@@ -278,14 +273,14 @@ ul, ol{
 	Gallery
 */
 
-.gallery{
+.gallery {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
 	font: 14px Arial;
 }
 
-.gallery>div{
+.gallery>div {
 	display: inline-block;
 	padding: 10px;
 	background-color: #fff;
@@ -296,11 +291,11 @@ ul, ol{
 	border-radius: 3px;
 }
 
-.gallery img{
+.gallery img {
 	opacity: 0;
 }
 
-.gallery>div>a>div{
+.gallery>div>a>div {
 	display: block;
 	width: 200px;
 	height: 200px;
@@ -309,16 +304,16 @@ ul, ol{
 	background-repeat: no-repeat;
 }
 
-.gallery h3{
+.gallery h3 {
 	font: 18px Tahoma;
 	text-align:center;
 }
 
-.gallery p{
+.gallery p {
 	margin-top: 5px;
 }
 
-.galleryx img{
+.galleryx img {
 	max-width:100%;
 }
 
@@ -326,7 +321,7 @@ ul, ol{
 	Pagination
 */
 
-.pagination{
+.pagination {
 	text-align:center;
 	margin:0;
 	padding:0;
@@ -337,7 +332,7 @@ ul, ol{
 	user-select: none;
 }
 
-.pagination a{
+.pagination a {
 	display: inline-block;
 	border-top: 1px solid #d8d8d8;
 	border-bottom: 1px solid #d8d8d8;
@@ -349,23 +344,23 @@ ul, ol{
 	font: 16px sans-serif;
 }
 
-.pagination a:hover{
+.pagination a:hover {
 	color:#262626;
 	background:#e5e5e5;
 }
 
-.pagination a.active, .pagination a.disabled{
+.pagination a.active, .pagination a.disabled {
 	pointer-events: none;
 	cursor: default;
 	background:#e5e5e5;
 }
 
-.pagination a:first-child{
+.pagination a:first-child {
 	border-radius:5px 0 0 5px;
 	border-left:1px solid #d8d8d8;
 }
 
-.pagination a:last-child{
+.pagination a:last-child {
 	border-radius:0 5px 5px 0;
 }
 
@@ -447,23 +442,23 @@ ul, ol{
 	}
 }
 
-.auto{
+.auto {
 	-webkit-flex: 1 auto;
 	-ms-flex: 1 auto;
 	flex: 1 auto;
 }
 
-.autorow{
+.autorow {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-flex-flow: row wrap;
 }
 
-.center{
+.center {
 	text-align: center;
 }
 
-.image{
+.image {
 	max-width: 100%;
 }
