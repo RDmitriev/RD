@@ -387,6 +387,9 @@ ul, ol{
 	-webkit-flex-wrap: wrap;
 	-ms-wrap: wrap;
 	flex-wrap: wrap;
+	
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
 }
 
 .wrap [class^="col-"] {
