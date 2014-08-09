@@ -438,6 +438,40 @@ mark {
 .col-11 {-webkit-flex: 11; box-flex: 11; -ms-flex: 11; flex: 11;}
 .col-12 {-webkit-flex: 12; box-flex: 12; -ms-flex: 12; flex: 12;}
 
+/*
+	Justify-content
+*/
+
+.flex-start {
+	-webkit-justify-content: flex-start;
+	-ms-box-orient: flex-start;
+	justify-content: flex-start;
+}
+
+.flex-end {
+	-webkit-justify-content: flex-end;
+	-ms-box-orient: flex-end;
+	justify-content: flex-end;
+}
+
+.flex-center {
+	-webkit-justify-content: center;
+	-ms-box-orient: center;
+	justify-content: center;
+}
+
+.flex-between {
+	-webkit-justify-content: space-between;
+	-ms-box-orient: space-between;
+	justify-content: space-between;
+}
+
+.flex-around {
+	-webkit-justify-content: space-around;
+	-ms-box-orient: space-around;
+	justify-content: space-around;
+}
+
 @media all and (max-width: 500px) {
 	[class^="col-"] {
 		-webkit-flex: 1 100%;
