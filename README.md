@@ -20,5 +20,5 @@ Install
 ```
  - Done!
 
-[http://putto.ru]:https://github.com/RDmitriev/Putto/archive/master.zip
+[http://putto.ru]:http://putto.ru
 [Putto]:https://github.com/RDmitriev/Putto/archive/master.zip
