@@ -176,6 +176,10 @@ mark {
 	background-color: #f5f5f5;
 }
 
+.form input[type=image]:hover, .form input[type=image]:focus {
+	border: 0;
+}
+
 .form input[type=text], .form input[type=email], .form input[type=password], .form textarea, .form select {
 	width: 100%;
 	border: 1px solid #d8d8d8;
