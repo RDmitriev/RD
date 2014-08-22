@@ -509,10 +509,6 @@ mark {
 	-webkit-flex-flow: row wrap;
 }
 
-.center {
-	text-align: center;
-}
-
 .image {
 	max-width: 100%;
 }
