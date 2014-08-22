@@ -1,7 +1,7 @@
 Putto
 =====
 
-Putto CSS-Framework
+CSS Framework
 
 Documentation
 ----
