@@ -5,10 +5,10 @@ CSS Framework
 
 Documentation
 ----
-[http://putto.ru]
+[Putto.ru]
 
 
-Install
+Usage
 ----
 
  - Download [Putto] and unzip **putto** folder from archive to the root in your site or project
@@ -20,5 +20,10 @@ Install
 ```
  - Done!
 
-[http://putto.ru]:http://putto.ru
+Change log
+----
+[releases]
+
+[Putto.ru]:http://putto.ru
 [Putto]:https://github.com/RDmitriev/Putto/archive/master.zip
+[releases]:https://github.com/RDmitriev/Putto/releases
