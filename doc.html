@@ -24,7 +24,7 @@
 	});
 	</script>
 	
-	<title>Hello world!</title>
+	<title>Документация RD CSS/JS Framework + Normalize + Blank</title>
 	
 	<style>
 		.setka>*>*{
@@ -36,9 +36,27 @@
 <body>
 	<div class="rd-wrapper">
 		<div class="box-1">
-			<h1 class="rd-center">RD CSS Framework + Normalize + Blank</h1>
+			<h1 class="rd-center">Документация RD CSS Framework + Normalize + Blank</h1>
 			
-			<h2>Сетка</h2>
+			<h2>Рабочая область</h2>
+			<p>.rd-wrapper - рабочая область шириной 1280px и внутренний отступ по краям 16px</p>
+			
+			<h2>Выравнивание</h2>
+			<div class="rd-row rd-padding rd-margin setka">
+				<div class="rd-col-12 rd-center">
+					<div>.rd-center</div>
+				</div>
+				
+				<div class="rd-col-12 rd-left">
+					<div>.rd-left</div>
+				</div>
+				
+				<div class="rd-col-12 rd-right">
+					<div>.rd-right</div>
+				</div>
+			</div>
+			
+			<h2>.rd-row Сетка</h2>
 			<div class="rd-row rd-padding rd-margin rd-center setka">
 				<div class="rd-col-12">
 					<div>.rd-col-12</div>
@@ -241,8 +259,213 @@
 				</div>
 			</div>
 			
-			<h2>Сетка</h2>
+			<h2>.rd-breadcrumbs Хлебные крошки</h2>
+			<ul class="rd-breadcrumbs"><li>Пункт 1</li><li>Пункт 2</li><li>Пункт 3</li></ul>
 			
+			<h2>.rd-table Таблица</h2>
+			<table class="rd-table">
+				<thead>
+					<tr>
+						<th>Пункт 1</th>
+						<th>Пункт 2</th>
+						<th>Пункт 3</th>
+						<th>Пункт 4</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h2>.rd-table rd-zebra Таблица + зебра</h2>
+			<table class="rd-table rd-zebra">
+				<thead>
+					<tr>
+						<th>Пункт 1</th>
+						<th>Пункт 2</th>
+						<th>Пункт 3</th>
+						<th>Пункт 4</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h2>.rd-table rd-zebra2 Таблица + зебра2</h2>
+			<table class="rd-table rd-zebra2">
+				<thead>
+					<tr>
+						<th>Пункт 1</th>
+						<th>Пункт 2</th>
+						<th>Пункт 3</th>
+						<th>Пункт 4</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+					
+					<tr>
+						<td>Пункт 1</td>
+						<td>Пункт 2</td>
+						<td>Пункт 3</td>
+						<td>Пункт 4</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<h2>.rd-form Форма</h2>
+			<form method="post" class="rd-form">
+				<div class="labelContainer label">
+					<input type="text" name="name" required><label>Текстовое поле</label>
+				</div>
+				
+				<div class="labelContainer">
+					<label><input type="checkbox" name="published" value="1"> Чекбокс 1</label>
+					<label><input type="checkbox" name="published" value="1"> Чекбокс 2</label>
+				</div>
+				
+				<div class="labelContainer">
+					<label><input type="radio" name="published" value="1"> Радио 1</label>
+					<label><input type="radio" name="published" value="1"> Радио 2</label>
+				</div>
+				
+				<div class="labelContainer label">
+					<textarea type="text" name="title" required="required"></textarea>
+					<label>Большое текстовое поле</label>
+				</div>
+				
+				<div class="labelContainer rd-right">
+					<input type="submit" name="send" value="Кнопка">
+				</div>
+			</form>
+			
+			<h2>Кнопки</h2>
+			
+			<div class="rd-row rd-margin">
+				<div class="rd-col-12">
+					<div>
+						<a href="#" class="rd-btn-inactive">.rd-btn-inactive</a>
+						<a href="#" class="rd-btn-active">.rd-btn-active</a>
+						<a href="#" class="rd-btn-success">.rd-btn-success</a>
+						<a href="#" class="rd-btn-danger">.rd-btn-danger</a>
+						<a href="#" class="rd-btn-blue">.rd-btn-blue</a>
+					</div>
+				</div>
+				
+				<div class="rd-col-12">
+					<div>
+						<a href="#" class="rd-btn-inactive rd-btn-xs">.rd-btn-inactive .rd-btn-xs</a>
+						<a href="#" class="rd-btn-active rd-btn-xs">.rd-btn-active .rd-btn-xs</a>
+						<a href="#" class="rd-btn-success rd-btn-xs">.rd-btn-success .rd-btn-xs</a>
+						<a href="#" class="rd-btn-danger rd-btn-xs">.rd-btn-danger .rd-btn-xs</a>
+						<a href="#" class="rd-btn-blue rd-btn-xs">.rd-btn-blue .rd-btn-xs</a>
+					</div>
+				</div>
+			</div>
+			
+			<h2>Инфо</h2>
+			
+			<div class="rd-row rd-margin">
+				<div class="rd-col-12">
+					<div>
+						<div class="rd-info-success">.rd-info-success</div>
+					</div>
+				</div>
+				
+				<div class="rd-col-12">
+					<div>
+						<div class="rd-info-danger">.rd-info-danger</div>
+					</div>
+				</div>
+				
+				<div class="rd-col-12">
+					<div>
+						<div class="rd-info-blue">.rd-info-blue</div>
+					</div>
+				</div>
+			</div>
+			
+			<h2>.rd-ul Список</h2>
+			
+			<ul class="rd-ul">
+				<li>Элемент 1</li>
+				<li>Элемент 2</li>
+				<li>Элемент 3</li>
+				<li>Элемент 4</li>
+				<li>Элемент 5</li>
+			</ul>
+			
+			<h2>.rd-pagination Пагинация</h2>
+			
+			<div class="rd-pagination">
+				<a href="" class="disabled">«</a><a href="/catalog/kompressoryi/vintovyie-kompressoryi?page=1" class="active">1</a><a href="/catalog/kompressoryi/vintovyie-kompressoryi?page=2" class="">2</a><a href="/catalog/kompressoryi/vintovyie-kompressoryi?page=3" class="">3</a><a href="/catalog/kompressoryi/vintovyie-kompressoryi?page=2">»</a>
+			</div>
+			
+			<br><h2>.rd-menu Меню</h2>
+			
+			<ul class="rd-menu rd-padding">
+				<li><a href="/">Пункт 1</a></li>
+				<li><a href="/">Пункт 2</a></li>
+				<li><a href="/">Пункт 3</a></li>
+				<li><a href="/">Пункт 4</a></li>
+				<li><a href="/">Пункт 5</a></li>
+				<li><a href="/">Пункт 6</a></li>
+				<li><a href="/">Пункт 7</a></li>
+			</ul>
 		</div>
 	</div>
 	
