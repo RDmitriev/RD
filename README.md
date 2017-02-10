@@ -7,10 +7,6 @@ CSS Framework + Normalize
 ----
 [RD doc]
 
-
-Usage
-----
-
  - Скачать [RD] и распаковать
  - Готово!
 
