@@ -1,0 +1,64 @@
+/*
+	CSS Framework + Normalize + Blank
+	
+	Powered by Руслан Enfo Дмитриев
+	http://rdmitriev.ru/githab/RD
+	https://github.com/RDmitriev/RD
+*/
+
+/*@font-face {
+	font-family: Pompadur;
+	src: url(fonts/pompadur.ttf);
+}*/
+
+body{
+	color:#000;
+	font-size:14px;
+	font-family: Arial;
+}
+a{
+	color:#000;
+	font-size:14px;
+	font-family: Arial;
+}
+h1, .h1{
+	color:#000;
+	font-size:21px;
+	font-family: Arial;
+}
+
+[class^="box-"]{
+	padding:50px 0;
+}
+
+.menu1open{
+	display: none;
+	cursor:pointer;
+	font-size:24px;
+	color:#000;
+	padding:10px 0;
+}
+.menu2open{
+	display: none;
+	cursor:pointer;
+	font-size:24px;
+	color:#000;
+	padding:10px 0;
+}
+@media all and (max-width: 700px) {
+	.menu-main{
+		display: none;
+		flex: 1 100%;
+		height: auto;
+	}
+	.menu1open{
+		display: block;
+	}
+	.menu2open{
+		display: block;
+	}
+	
+	.showMenu{
+		display:block;
+	}
+}
