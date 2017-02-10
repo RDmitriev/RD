@@ -1,29 +1,23 @@
-Putto
+RD
 =====
 
-CSS Framework
+CSS Framework + Normalize
 
-Documentation
+Документация
 ----
-[Putto.ru]
+[RD doc]
 
 
 Usage
 ----
 
- - Download [Putto] and unzip **putto** folder from archive to the root in your site or project
- - Copy and paste the following HTML into a ```<head></head>``` tag:
+ - Скачать [RD] и распаковать
 
 ```sh
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/putto/putto.css">
 ```
- - Done!
+ - Готово!
 
-Change log
-----
-[releases]
-
-[Putto.ru]:http://putto.ru
-[Putto]:https://github.com/RDmitriev/Putto/archive/master.zip
-[releases]:https://github.com/RDmitriev/Putto/releases
+[RD doc]:http://rdmitriev.ru/githab/RD
+[RD]:https://github.com/RDmitriev/Putto/archive/master.zip
