@@ -1,7 +1,7 @@
 RD
 =====
 
-CSS Framework + Normalize + Blank
+RD CSS/JS Framework + Normalize + Blank
 
 Документация
 ----

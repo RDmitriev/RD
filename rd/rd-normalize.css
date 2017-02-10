@@ -1,5 +1,5 @@
 /*
-	CSS Framework + Normalize + Blank
+	RD CSS/JS Framework + Normalize + Blank
 	
 	Powered by Руслан Enfo Дмитриев
 	http://rdmitriev.ru/githab/RD
