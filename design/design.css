@@ -37,6 +37,7 @@ h1, .h1{
 	font-size:24px;
 	color:#000;
 	padding:10px 0;
+	text-align: center;
 }
 .menu2open{
 	display: none;
@@ -44,6 +45,7 @@ h1, .h1{
 	font-size:24px;
 	color:#000;
 	padding:10px 0;
+	text-align: center;
 }
 @media all and (max-width: 700px) {
 	.menu-main{
