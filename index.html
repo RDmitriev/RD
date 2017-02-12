@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext' rel='stylesheet'>
 	
-	<link rel="stylesheet" href="/rd/rd-normalize.css">
-	<link rel="stylesheet" href="/rd/rd-framework.css">
+	<link rel="stylesheet" href="/design/rd/rd-normalize.css">
+	<link rel="stylesheet" href="/design/rd/rd-framework.css">
 	<link rel="stylesheet" href="/design/design.css">
 	<script src="/design/js/jquery.min.js"></script>
 	<script src="/design/js/js.js"></script>
@@ -15,11 +15,11 @@
 	<script>
 	$(window).load(function() {
 		$(".menu1open").click(function() {
-			$(".menu-main").toggleClass("showMenu");
+			$(".rd-menu").toggleClass("showMenu");
 		});
 		
 		$(".menu2open").click(function() {
-			$(".menu-main").toggleClass("showMenu");
+			$(".rd-menu2").toggleClass("showMenu");
 		});
 	});
 	</script>
@@ -34,9 +34,15 @@
 	</div>
 	
 	<!-- Row
-		<div class="rd-row">
-			<div class="rd-col-12">
-				
+		<div class="rd-wrapper">
+			<div class="box-1">
+				<div class="rd-row">
+					<div class="rd-col-12">
+						<div>
+							
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	-->
