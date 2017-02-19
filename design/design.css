@@ -8592,7 +8592,7 @@ h1, .h1{
 	text-align: center;
 }
 @media all and (max-width: 700px) {
-	.rd-menu{
+	.rd-menu-1{
 		display: none;
 	}
 	.menu1open{
