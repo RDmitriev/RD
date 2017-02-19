@@ -8,10 +8,10 @@
 
 $(window).load(function() {
 	$(".menu1open").click(function() {
-		$(".menu-main").toggleClass("showMenu");
+		$(".rd-menu-1").toggleClass("showMenu");
 	});
 	
 	$(".menu2open").click(function() {
-		$(".menu-main").toggleClass("showMenu");
+		$(".rd-menu-2").toggleClass("showMenu");
 	});
 });
