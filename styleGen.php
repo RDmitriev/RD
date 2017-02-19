@@ -9,17 +9,31 @@
 	
 	for($i=1; $i <= 20; $i++)
 	{
-		echo '.box-' . $i . '{background: url(img/bg' . $i . '.jpg) top center no-repeat;background-size:cover;}
-.box-' . $i . ' .line-1{} .box-' . $i . ' .line-1 a{}
-.box-' . $i . ' .line-2{} .box-' . $i . ' .line-2 a{}
-.box-' . $i . ' .line-3{} .box-' . $i . ' .line-3 a{}
-.box-' . $i . ' .line-4{} .box-' . $i . ' .line-4 a{}
-.box-' . $i . ' .line-5{} .box-' . $i . ' .line-5 a{}
-.box-' . $i . ' .line-6{} .box-' . $i . ' .line-6 a{}
-.box-' . $i . ' .line-7{} .box-' . $i . ' .line-7 a{}
-.box-' . $i . ' .line-8{} .box-' . $i . ' .line-8 a{}
-.box-' . $i . ' .line-9{} .box-' . $i . ' .line-9 a{}
-.box-' . $i . ' .line-10{} .box-' . $i . ' .line-10 a{}
+		$textStyle = '
+	/* color: #cccccc; */
+	/* font-size: 14px; */
+	/* text-transform: uppercase; */
+	/* background: #132656; */
+	/* padding: 10px; */
+';
+
+$boxStyle = '
+	/* background: url(img/bg' . $i . '.jpg) top center no-repeat; */
+	/* background-size:cover; */
+';
+
+		echo '.box-' . $i . '{' . $boxStyle . '}
+';
+		
+		for($y=1; $y <= 20; $y++)
+		{
+			echo '.box-' . $i . ' .line-' . $y . '{' . $textStyle . '}
+.box-' . $i . ' .line-' . $y . ' a{' . $textStyle . '}
+.box-' . $i . ' .line-' . $y . ' span{' . $textStyle . '}
+';
+		}
+		
+		echo '
 
 ';
 	}

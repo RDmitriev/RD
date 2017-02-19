@@ -375,26 +375,26 @@
 	Ul
 */
 
-.rd-ul {
+[class^="rd-ul-"] {
 	list-style-position: inside;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.rd-ul li {
+[class^="rd-ul-"] li {
 	list-style-position: inside;
 }
 
-.rd-ul ul {
+[class^="rd-ul-"] ul {
 	list-style:none;
 }
 
-.rd-ul ul li {
+[class^="rd-ul-"] ul li {
 	margin-left: 10px;
 }
 
-.rd-ul a {
+[class^="rd-ul-"] a {
 	text-decoration: none;
 }
 
@@ -449,29 +449,29 @@
 	Menu
 */
 
-.rd-menu{
+[class^="rd-menu-"]{
 	margin: 0;
 	padding: 0;
 	font-size: 0;
 	text-align: justify;
 }
-.rd-menu:after{
+[class^="rd-menu-"]:after{
 	content: '';
     display: inline-block;
     width: 100%;
 }
-.rd-menu>li{
+[class^="rd-menu-"]>li{
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
 }
-.rd-menu>li>a{
+[class^="rd-menu-"]>li>a{
 	display: block;
 }
 
 @media all and (max-width: 500px) {
-	.rd-menu{
+	[class^="rd-menu-"]{
 		display:none;
 	}
 }
@@ -515,6 +515,7 @@
 .rd-col-12 {width: 100%;}
 
 @media all and (max-width: 1200px){
+	.rd-col-1200-center {text-align: center !important;}
 	.rd-col-1200-0 {display: none !important;}
 	.rd-col-1200-1 {width: 8.33333%;}
 	.rd-col-1200-2 {width: 16.66667%;}
@@ -531,6 +532,7 @@
 }
 
 @media all and (max-width: 1100px){
+	.rd-col-1100-center {text-align: center !important;}
 	.rd-col-1100-0 {display: none !important;}
 	.rd-col-1100-1 {width: 8.33333%;}
 	.rd-col-1100-2 {width: 16.66667%;}
@@ -547,6 +549,7 @@
 }
 
 @media all and (max-width: 1000px){
+	.rd-col-1000-center {text-align: center !important;}
 	.rd-col-1000-0 {display: none !important;}
 	.rd-col-1000-1 {width: 8.33333%;}
 	.rd-col-1000-2 {width: 16.66667%;}
@@ -563,6 +566,7 @@
 }
 
 @media all and (max-width: 900px){
+	.rd-col-900-center {text-align: center !important;}
 	.rd-col-900-0 {display: none !important;}
 	.rd-col-900-1 {width: 8.33333%;}
 	.rd-col-900-2 {width: 16.66667%;}
@@ -579,6 +583,7 @@
 }
 
 @media all and (max-width: 800px) {
+	.rd-col-800-center {text-align: center !important;}
 	.rd-col-800-0 {display: none !important;}
 	.rd-col-800-1 {width: 8.33333%;}
 	.rd-col-800-2 {width: 16.66667%;}
@@ -595,6 +600,7 @@
 }
 
 @media all and (max-width: 700px) {
+	.rd-col-700-center {text-align: center !important;}
 	.rd-col-700-0 {display: none !important;}
 	.rd-col-700-1 {width: 8.33333%;}
 	.rd-col-700-2 {width: 16.66667%;}
@@ -611,6 +617,7 @@
 }
 
 @media all and (max-width: 600px) {
+	.rd-col-600-center {text-align: center !important;}
 	.rd-col-600-0 {display: none !important;}
 	.rd-col-600-1 {width: 8.33333%;}
 	.rd-col-600-2 {width: 16.66667%;}
@@ -627,6 +634,7 @@
 }
 
 @media all and (max-width: 500px) {
+	.rd-col-500-center {text-align: center !important;}
 	.rd-col-500-0 {display: none !important;}
 	.rd-col-500-1 {width: 8.33333%;}
 	.rd-col-500-2 {width: 16.66667%;}
@@ -643,6 +651,7 @@
 }
 
 @media all and (max-width: 400px) {
+	.rd-col-400-center {text-align: center !important;}
 	.rd-col-400-0 {display: none !important;}
 	.rd-col-400-1 {width: 8.33333%;}
 	.rd-col-400-2 {width: 16.66667%;}
@@ -659,6 +668,7 @@
 }
 
 @media all and (max-width: 300px) {
+	.rd-col-300-center {text-align: center !important;}
 	.rd-col-300-0 {display: none !important;}
 	.rd-col-300-1 {width: 8.33333%;}
 	.rd-col-300-2 {width: 16.66667%;}
@@ -675,6 +685,7 @@
 }
 
 @media all and (max-width: 200px) {
+	.rd-col-200-center {text-align: center !important;}
 	.rd-col-200-0 {display: none !important;}
 	.rd-col-200-1 {width: 8.33333%;}
 	.rd-col-200-2 {width: 16.66667%;}
@@ -691,6 +702,7 @@
 }
 
 @media all and (max-width: 100px) {
+	.rd-col-100-center {text-align: center !important;}
 	.rd-col-100-0 {display: none !important;}
 	.rd-col-100-1 {width: 8.33333%;}
 	.rd-col-100-2 {width: 16.66667%;}
@@ -706,19 +718,35 @@
 	.rd-col-100-12 {width: 100%;}
 }
 
-.rd-row-5x {
+/*
+	Grid auto
+*/
+
+[class^="rd-row-"] {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
 }
 
-.rd-row-5x>*{
+[class^="rd-row-"]>*{
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
-	width:20%;
 }
+
+.rd-row-1x>* {width: 100%;}
+.rd-row-2x>* {width: 50%;}
+.rd-row-3x>* {width: 33.33333%;}
+.rd-row-4x>* {width: 25%;}
+.rd-row-5x>* {width: 20%;}
+.rd-row-6x>* {width: 16.66666%;}
+.rd-row-7x>* {width: 14.28571%;}
+.rd-row-8x>* {width: 12.5%;}
+.rd-row-9x>* {width: 11.11111%;}
+.rd-row-10x>* {width: 10%;}
+.rd-row-11x>* {width: 9.09090%;}
+.rd-row-12x>* {width: 8.33333%;}
 
 @media all and (max-width: 1000px) {
 	
