@@ -2,7 +2,7 @@
 	/*
 		RD CSS/JS Framework + Normalize + Blank
 		
-		Powered by Руслан Enfo Дмитриев
+		Powered by Ruslan Dmitriev
 		http://rdmitriev.ru/githab/RD
 		https://github.com/RDmitriev/RD
 	*/
