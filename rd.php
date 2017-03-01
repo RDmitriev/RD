@@ -24,14 +24,14 @@ $boxStyle = '
 	/* position: relative; */
 ';
 
-		echo '.box-' . $i . '{' . $boxStyle . '}
+		echo '.rd-box-' . $i . '{' . $boxStyle . '}
 ';
 		
 		for($y=1; $y <= 20; $y++)
 		{
-			echo '.box-' . $i . ' .line-' . $y . '{' . $textStyle . '}
-.box-' . $i . ' .line-' . $y . ' a{' . $textStyle . '}
-.box-' . $i . ' .line-' . $y . ' span{' . $textStyle . '}
+			echo '.rd-box-' . $i . ' .line-' . $y . '{' . $textStyle . '}
+.rd-box-' . $i . ' .line-' . $y . ' a{' . $textStyle . '}
+.rd-box-' . $i . ' .line-' . $y . ' span{' . $textStyle . '}
 ';
 		}
 		
