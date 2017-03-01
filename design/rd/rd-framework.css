@@ -44,6 +44,10 @@
 	position: relative;
 }
 
+[class^="rd-box"] {
+	overflow: hidden;
+}
+
 /*
 	Breadcrumbs
 */
@@ -449,29 +453,29 @@
 	Menu
 */
 
-[class^="rd-menu-"]{
+[class^="rd-menu"]{
 	margin: 0;
 	padding: 0;
 	font-size: 0;
 	text-align: justify;
 }
-[class^="rd-menu-"]:after{
+[class^="rd-menu"]:after{
 	content: '';
     display: inline-block;
     width: 100%;
 }
-[class^="rd-menu-"]>li{
+[class^="rd-menu"]>li{
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
 }
-[class^="rd-menu-"]>li>a{
+[class^="rd-menu"]>li>a{
 	display: block;
 }
 
 @media all and (max-width: 500px) {
-	[class^="rd-menu-"]{
+	[class^="rd-menu"]{
 		display:none;
 	}
 }
