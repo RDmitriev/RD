@@ -142,55 +142,55 @@
 	Form
 */
 
-.rd-form{
+[class^="rd-form"]{
 	padding-top: 16px;
 }
 
-.rd-form input,
-.rd-form textarea,
-.rd-form select {
+[class^="rd-form"] input,
+[class^="rd-form"] textarea,
+[class^="rd-form"] select {
 	outline: none;
 	display: block;
 	font: 12px 'Noto Sans', Arial;
 	color: #00bcd4;
 }
 
-.rd-form input[type=radio],
-.rd-form input[type=checkbox] {
+[class^="rd-form"] input[type=radio],
+[class^="rd-form"] input[type=checkbox] {
 	display: inline-block;
 }
 
-.rd-form input[type=submit] {
+[class^="rd-form"] input[type=submit] {
 	outline: none;
 	display: block;
 }
 
-.rd-form input[type=image]:hover,
-.rd-form input[type=image]:focus {
+[class^="rd-form"] input[type=image]:hover,
+[class^="rd-form"] input[type=image]:focus {
 	border: 0;
 }
 
-.rd-form textarea,
-.rd-form select,
-.rd-form input[type=text],
-.rd-form input[type=email],
-.rd-form input[type=password],
-.rd-form input[type=date],
-.rd-form input[type=datetime-local] {
+[class^="rd-form"] textarea,
+[class^="rd-form"] select,
+[class^="rd-form"] input[type=text],
+[class^="rd-form"] input[type=email],
+[class^="rd-form"] input[type=password],
+[class^="rd-form"] input[type=date],
+[class^="rd-form"] input[type=datetime-local] {
 	width: 100%;
 	border: 1px solid #d8d8d8;
 	padding: 5px;
 	color: #404040;
 }
 
-.rd-form textarea {
+[class^="rd-form"] textarea {
 	height: 100px;
 	resize: none;
 }
 
-.rd-form input[type=submit],
-.rd-form input[type=button],
-.rd-form button {
+[class^="rd-form"] input[type=submit],
+[class^="rd-form"] input[type=button],
+[class^="rd-form"] button {
 	cursor: pointer;
 	padding: 10px 16px;
 	display: inline;
@@ -200,20 +200,20 @@
 	transition: all 0.3s;
 }
 
-.rd-form input[type=submit]:hover,
-.rd-form input[type=button]:hover,
-.rd-form button:hover {
+[class^="rd-form"] input[type=submit]:hover,
+[class^="rd-form"] input[type=button]:hover,
+[class^="rd-form"] button:hover {
 	opacity: 0.9;
 	background:#B2EBF2;
 	background: #00bcd4;
     color: #fff;
 }
 
-.rd-form input[type=checkbox] {
+[class^="rd-form"] input[type=checkbox] {
 	display: inline;
 }
 
-.rd-form input[type=file] {
+[class^="rd-form"] input[type=file] {
 	border: 0px;
 	background-color: transparent;
 }
@@ -225,7 +225,7 @@
 .labelContainer:last-child{
 	margin-bottom: 0;
 }
-.rd-form .label label{
+[class^="rd-form"] .label label{
 	position: absolute;
     top: 7px;
 	left: 5px;
@@ -236,14 +236,14 @@
 	padding:0 5px;
 	font-family: 'Noto Sans', sans-serif;
 }
-.rd-form .label input, .rd-form .label textarea{
+[class^="rd-form"] .label input, [class^="rd-form"] .label textarea{
 	padding:10px !important;
 }
-.rd-form .label input:focus ~ label,
-.rd-form .label input:valid ~ label,
-.rd-form .label input:read-only ~ label,
-.rd-form .label textarea:focus ~ label,
-.rd-form .label textarea:valid ~ label{
+[class^="rd-form"] .label input:focus ~ label,
+[class^="rd-form"] .label input:valid ~ label,
+[class^="rd-form"] .label input:read-only ~ label,
+[class^="rd-form"] .label textarea:focus ~ label,
+[class^="rd-form"] .label textarea:valid ~ label{
 	top: -10px;
 	color: #00838F;
 	background: #fff;
@@ -485,7 +485,7 @@
 	Grid
 */
 
-.rd-row {
+[class^="rd-row"] {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
@@ -496,10 +496,6 @@
     vertical-align: top;
 	font-size: initial;
 	position: relative;
-}
-
-.rd-row [class^="rd-line-"]{
-	margin-bottom: 8px;
 }
 
 .rd-row [class^="rd-line-"]{
@@ -726,12 +722,6 @@
 /*
 	Grid auto
 */
-
-[class^="rd-row-"] {
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-}
 
 [class^="rd-row-"]>*{
 	display: inline-block;
