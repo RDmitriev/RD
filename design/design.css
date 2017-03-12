@@ -26,7 +26,9 @@ h1, .h1{
 	font-size:21px;
 	font-family: Arial;
 }
-
+*{
+	word-wrap: break-word !important;
+}
 [class^="box-"]{
 	padding:50px 0;
 }
@@ -9772,6 +9774,10 @@ h1, .h1{
 	/* font-family: bold; */
 }
 
+/*
+	Form
+*/
+
 .rd-form-1{
 	
 }
@@ -9795,6 +9801,22 @@ h1, .h1{
 	/* padding: 10px 85px; */
 	/* color: #fff; */
 	/* font-size: 22px; */
+}
+
+/*
+	Ul
+*/
+
+.rd-ul-1{
+	
+}
+
+.rd-ul-1 li{
+	
+}
+
+.rd-ul-1 li a{
+	
 }
 
 .menu1open{
@@ -9825,8 +9847,5 @@ h1, .h1{
 	
 	.showMenu{
 		display:block;
-	}
-	*{
-		word-wrap: break-word !important;
 	}
 }

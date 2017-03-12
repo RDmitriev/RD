@@ -12,16 +12,11 @@
 		$textStyle = '
 	/* color: #cccccc; */
 	/* font-size: 14px; */
-	/* text-transform: uppercase; */
-	/* background: #132656; */
-	/* padding: 10px; */
-	/* font-family: bold; */
 ';
 
 $boxStyle = '
 	/* background: url(img/bg' . $i . '.jpg) top center no-repeat; */
-	/* background-size:cover; */
-	/* position: relative; */
+	/* background-size: cover; */
 ';
 
 		echo '.rd-box-' . $i . '{' . $boxStyle . '}
