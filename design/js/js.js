@@ -7,11 +7,11 @@
 */
 
 $(window).load(function() {
-	$(".menu1open").click(function() {
+	$(".rd-menu-open-1").click(function() {
 		$(".rd-menu-1").toggleClass("showMenu");
 	});
 	
-	$(".menu2open").click(function() {
+	$(".rd-menu-open-2").click(function() {
 		$(".rd-menu-2").toggleClass("showMenu");
 	});
 });
