@@ -252,14 +252,14 @@ $boxStyle = '
 		$html .= '
 	<div class="rd-wrapper">
 		<div class="rd-box-' . $i . '">
-			<div class="rd-row">
+			<div class="rd-row rd-margin rd-padding">
 				<div class="rd-col-12">
-					<div>
-						<div class="line-1">
+					<div class="line-1">
+						<div class="line-2">
 							<a href="/"><img src="/design/img/img.jpg"></a>
 						</div>
 ';
-					for($y=2; $y <= $line; $y++)
+					for($y=3; $y <= $line; $y++)
 					{
 						$html .= '
 						<div class="line-' . $y . '">
@@ -281,6 +281,8 @@ $boxStyle = '
 	
 	file_put_contents('design/design.css', $css);
 	file_put_contents('index.html', $html);
+	
+	unlink('index.php');
 	
 	header('Location: index.html');
 }
