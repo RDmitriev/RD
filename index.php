@@ -13,7 +13,7 @@
 		$line = $_POST['line']; // кол-во линий
 		$menu = $_POST['menu']; // кол-во меню
 		$ul = $_POST['ul']; // кол-во списков
-		$form = $_POST['form']; // кол-во списков
+		$form = $_POST['form']; // кол-во форм
 
 	/*
 		CSS GENERATION
@@ -160,10 +160,10 @@ $boxStyle = '
 		display: none;
 	}
 	
-	.menu1open{
+	.rd-menu-open-1{
 		display: block;
 	}
-	.menu2open{
+	.rd-menu-open-2{
 		display: block;
 	}
 	
@@ -320,7 +320,7 @@ $boxStyle = '
 								</div>
 								
 								<div class="labelContainer label">
-									<input type="text" name="form" value="1" required><label>Кол-во списков</label>
+									<input type="text" name="form" value="1" required><label>Кол-во форм</label>
 								</div>
 								
 								<div class="labelContainer rd-right">
