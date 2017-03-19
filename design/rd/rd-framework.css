@@ -472,6 +472,12 @@
 	font-size: initial;
 	position: relative;
 }
+[class^="rd-menu"]>li:first-child a{
+	padding-left: 0;
+}
+[class^="rd-menu"]>li:last-child a{
+	padding-right: 0;
+}
 [class^="rd-menu"]>li>a{
 	display: block;
 }
