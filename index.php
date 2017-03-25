@@ -188,6 +188,11 @@ $boxStyle = '
 	<link rel="stylesheet" href="/design/font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" href="/design/design.css">
 	<script src="/design/js/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="/design/js/owl.carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" href="/design/js/owl.carousel/assets/owl.theme.default.min.css">
+	<script src="/design/js/owl.carousel/owl.carousel.min.js"></script>
+	
 	<script src="/design/js/js.js"></script>
 	
 	<title>Hello world!</title>
