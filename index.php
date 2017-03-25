@@ -57,9 +57,11 @@ h1, .h1{
 ';
 
 	// MENU
-	for($i=1; $i <= $menu; $i++)
+	if($menu > 0)
 	{
-		$css .= '.rd-menu-' . $i . '{
+		for($i=1; $i <= $menu; $i++)
+		{
+			$css .= '.rd-menu-' . $i . '{
 	
 }
 .rd-menu-' . $i . ' li{
@@ -77,12 +79,15 @@ h1, .h1{
 }
 
 ';
+		}
 	}
 	
 	// Ul
-	for($i=1; $i <= $ul; $i++)
+	if($ul > 0)
 	{
-		$css .= '.rd-ul-' . $i . '{
+		for($i=1; $i <= $ul; $i++)
+		{
+			$css .= '.rd-ul-' . $i . '{
 	
 }
 .rd-ul-' . $i . ' li{
@@ -93,12 +98,15 @@ h1, .h1{
 }
 
 ';
+		}
 	}
 	
 	// FORM
-	for($i=1; $i <= $form; $i++)
+	if($form > 0)
 	{
-		$css .= '.rd-form-' . $i . '{
+		for($i=1; $i <= $form; $i++)
+		{
+			$css .= '.rd-form-' . $i . '{
 	
 }
 
@@ -124,12 +132,15 @@ h1, .h1{
 }
 
 ';
+		}
 	}
-
+	
 	// ROW
-	for($i=1; $i <= $box; $i++)
+	if($box > 0)
 	{
-		$textStyle = '
+		for($i=1; $i <= $box; $i++)
+		{
+			$textStyle = '
 	/* color: #cccccc; */
 	/* font-size: 14px; */
 ';
@@ -142,12 +153,16 @@ $boxStyle = '
 		$css .= '.rd-box-' . $i . '{' . $boxStyle . '}
 ';
 		
-		for($y=1; $y <= $line; $y++)
-		{
-			$css .= '.rd-box-' . $i . ' .line-' . $y . '{' . $textStyle . '}
+			if($box > 0)
+			{
+				for($y=1; $y <= $line; $y++)
+				{
+				$css .= '.rd-box-' . $i . ' .line-' . $y . '{' . $textStyle . '}
 .rd-box-' . $i . ' .line-' . $y . ' a{' . $textStyle . '}
 .rd-box-' . $i . ' .line-' . $y . ' span{' . $textStyle . '}
 ';
+				}
+			}
 		}
 	}
 	
@@ -200,30 +215,38 @@ $boxStyle = '
 <body>';
 	
 	// MENU
-	for($i=1; $i <= $menu; $i++)
+	if($menu > 0)
 	{
-		$html .= '
+		for($i=1; $i <= $menu; $i++)
+		{
+			$html .= '
 	<div class="rd-menu-open-' . $i . ' rd-center"><i class="fa fa-bars"></i> МЕНЮ</div>
 	<ul class="rd-menu-' . $i . ' rd-padding">
 		<li><a href="/">Пункт</a></li>
 	</ul>
 ';
+		}
 	}
 	
 	// UL
-	for($i=1; $i <= $ul; $i++)
+	if($ul > 0)
 	{
-		$html .= '
+		for($i=1; $i <= $ul; $i++)
+		{
+			$html .= '
 	<ul class="rd-ul-' . $i . '">
 		<li><a href="/">Пункт</a></li>
 	</ul>
 ';
+		}
 	}
 	
-	// UL
-	for($i=1; $i <= $form; $i++)
+	// FORM
+	if($form > 0)
 	{
-		$html .= '
+		for($i=1; $i <= $form; $i++)
+		{
+			$html .= '
 	<form method="post" class="rd-form-' . $i . '">
 		<div class="labelContainer label">
 			<input type="text" name="name" required><label>Текстовое поле</label>
@@ -249,12 +272,15 @@ $boxStyle = '
 		</div>
 	</form>
 ';
+		}
 	}
 	
 	// ROW
-	for($i=1; $i <= $box; $i++)
+	if($box > 0)
 	{
-		$html .= '
+		for($i=1; $i <= $box; $i++)
+		{
+			$html .= '
 	<div class="rd-wrapper">
 		<div class="rd-box-' . $i . '">
 			<div class="rd-row rd-margin rd-padding">
@@ -279,6 +305,7 @@ $boxStyle = '
 		</div>
 	</div>
 ';
+		}
 	}
 	
 	$html .= '</body>
