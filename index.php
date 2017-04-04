@@ -80,6 +80,27 @@ h1, .h1{
 
 ';
 		}
+		
+		$css .= '
+@media all and (max-width: 700px) {
+	.rd-menu-1{
+		display: none;
+	}
+	.rd-menu-2{
+		display: none;
+	}
+	
+	.rd-menu-open-1{
+		display: block;
+	}
+	.rd-menu-open-2{
+		display: block;
+	}
+	
+	.showMenu{
+		display:block;
+	}
+}';
 	}
 	
 	// Ul
@@ -165,27 +186,6 @@ $boxStyle = '
 			}
 		}
 	}
-	
-	$css .= '
-@media all and (max-width: 700px) {
-	.rd-menu-1{
-		display: none;
-	}
-	.rd-menu-2{
-		display: none;
-	}
-	
-	.rd-menu-open-1{
-		display: block;
-	}
-	.rd-menu-open-2{
-		display: block;
-	}
-	
-	.showMenu{
-		display:block;
-	}
-}';
 	
 	/*
 		HTML GENERATION
