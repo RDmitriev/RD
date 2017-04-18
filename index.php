@@ -15,12 +15,13 @@
 	
 	if(isset($_POST['generate']))
 	{
-		$outputHtml = '';
+		$outputHtml2 = '';
 		$outputCss = '';
-		$outputCssMedia = '';
+		$outputCssMedia = array();
 		
 		foreach($_POST['part'] as $key => $val)
 		{
+			$outputHtml = '';
 			$part = trim($part);
 			
 			if($val != '')
@@ -31,7 +32,7 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia .= $output['2'];
+					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['menu'][$key])
@@ -40,7 +41,7 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia .= $output['2'];
+					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['ul'][$key])
@@ -49,7 +50,7 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia .= $output['2'];
+					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['form'][$key])
@@ -58,19 +59,17 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia .= $output['2'];
+					$outputCssMedia = $output['2'];
 				}
 				
-				// вставляем html в row
 				$output = row($key, $outputHtml, $val);
 				
 				$outputCss .= $output['1'];
-				$outputHtml = $output['0'];
-				
+				$outputHtml2 .= $output['0'];
 			}
 		}
 		
-		$html = html($outputHtml);
+		$html = html($outputHtml2);
 		$css = css($outputCss);
 		$cssMedia = cssMedia($outputCssMedia);
 		
@@ -78,16 +77,16 @@
 		file_put_contents('design/style.css', $css);
 		file_put_contents('design/media.css', $cssMedia);
 		
-		//unlink('index.php');
+		unlink('index.php');
 		
-		//header('Location: index.html');
+		header('Location: index.html');
 	}
 	
 	function line($id, $count)
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = '';
+		$cssMedia = array();
 		
 		$textStyle = '
 	/* color: #cccccc; */
@@ -125,20 +124,21 @@
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = '';
+		$cssMedia = array();
 		
-		for($i=1; $i <= $count; $i++)
+		for($y=1; $y <= $count; $y++)
 		{
-			$css .= '.rd-menu-' . $i . '{
+			$css .= '
+.rd-menu-' . $id . '-' . $y . '{
 	
 }
-.rd-menu-' . $i . ' li{
+.rd-menu-' . $id . '-' . $y . ' li{
 	
 }
-.rd-menu-' . $i . ' li a{
+.rd-menu-' . $id . '-' . $y . ' li a{
 	
 }
-.rd-menu-open-' . $i . '{
+.rd-menu-open-' . $id . '-' . $y . '{
 	display: none;
 	cursor:pointer;
 	font-size:24px;
@@ -148,30 +148,26 @@
 
 ';
 
+		$html .= '
 
-		for($i=1; $i <= $count; $i++)
-		{
-			$html .= '
-
-					<div class="rd-menu-open-' . $i . ' rd-center"><i class="fa fa-bars"></i> МЕНЮ</div>
-					<ul class="rd-menu-' . $i . ' rd-padding">
+					<div class="rd-menu-open-' . $id . '-' . $y . ' rd-center"><i class="fa fa-bars"></i> МЕНЮ</div>
+					<ul class="rd-menu-' . $id . '-' . $y . ' rd-padding">
 						<li><a href="/">Пункт</a></li>
 					</ul>';
-		}
 
-$css_media_array[700] .= '	.rd-menu-' . $i . '{
+$cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 		display: none;
 	}
-	.rd-menu-open-' . $i . '{
+	.rd-menu-open-' . $id . '-' . $y . '{
 		display: block;
 	}
 
 ';
 		}
 		
-		$css_media_array[700] .= '	.showMenu{
-	display:block;
-}';
+		$cssMedia[700] .= '	.showMenu{
+		display:block;
+	}';
 		
 		return array($html, $css, $cssMedia);
 	}
@@ -180,17 +176,17 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = '';
+		$cssMedia = array();
 		
 		for($i=1; $i <= $count; $i++)
 		{
-			$css .= '.rd-ul-' . $i . '{
+			$css .= '.rd-ul-' . $id . '-' . $i . '{
 	
 }
-.rd-ul-' . $i . ' li{
+.rd-ul-' . $id . '-' . $i . ' li{
 	
 }
-.rd-ul-' . $i . ' li a{
+.rd-ul-' . $id . '-' . $i . ' li a{
 	
 }
 
@@ -201,7 +197,7 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 		{
 			$html .= '
 
-					<ul class="rd-ul-' . $i . '">
+					<ul class="rd-ul-' . $id . '-' . $i . '">
 						<li><a href="/">Пункт</a></li>
 					</ul>';
 		}
@@ -213,29 +209,25 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = '';
+		$cssMedia = array();
 		
 		for($i=1; $i <= $count; $i++)
 		{
-			$css .= '.rd-form-' . $i . '{
+			$css .= '.rd-form-' . $id . '-' . $i . '{
 	
 }
-
-.rd-form-' . $i . ' input[type=text] {
+.rd-form-' . $id . '-' . $i . ' input[type=text] {
 	/* background:transparent; */
 	/* border:2px solid #000; */
 }
-
-.rd-form-' . $i . ' textarea {
+.rd-form-' . $id . '-' . $i . ' textarea {
 	/* background:transparent; */
 	/* border:2px solid #000; */
 }
-
-.rd-form-' . $i . ' label {
+.rd-form-' . $id . '-' . $i . ' label {
 	/* color:#000000 !important; */
 }
-
-.rd-form-' . $i . ' input[type=submit] {
+.rd-form-' . $id . '-' . $i . ' input[type=submit] {
 	/* background: #ff9600; */
 	/* padding: 10px 85px; */
 	/* color: #fff; */
@@ -249,7 +241,7 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 		{
 			$html .= '
 
-					<form method="post" class="rd-form-' . $i . '">
+					<form method="post" class="rd-form-' . $id . '-' . $i . '">
 						<div class="labelContainer label">
 							<input type="text" name="name" required><label>Текстовое поле</label>
 						</div>
@@ -282,7 +274,11 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = '';
+		$cssMedia = array();
+		
+		$count = 0;
+		
+		$col = explode('x', $cols);
 		
 		$boxStyle = '
 	/* background: url(img/bg' . $id . '.jpg) top center no-repeat; */
@@ -291,26 +287,38 @@ $css_media_array[700] .= '	.rd-menu-' . $i . '{
 
 		$css .= '.rd-box-' . $id . '{' . $boxStyle . '}
 ';
-
-		for($y=1; $y <= $line; $y++)
-		{
-			$css .= '.rd-box-' . $id . ' .line-' . $y . '{' . $textStyle . '}
-.rd-box-' . $id . ' .line-' . $y . ' a{' . $textStyle . '}
-.rd-box-' . $id . ' .line-' . $y . ' span{' . $textStyle . '}
-';
-		}
-		
 		$html .= '
 	<div class="rd-wrapper">
 		<div class="rd-box-' . $id . '">
 			<div class="rd-row rd-margin rd-padding">
-				<div class="rd-col-12">
+';
+		
+		foreach($col as $i)
+		{
+			$count++;
+			
+			if($count == 1)
+			{
+				$html .= '				<div class="rd-col-' . $i . '">
 					' . $outputHtml . '
 				</div>
-			</div>
+';
+			}
+			else
+			{
+				$html .= '				
+				<div class="rd-col-' . $i . '">
+					
+				</div>
+';
+			}
+		}
+		
+		$html .= '			</div>
 		</div>
 	</div>
 ';
+
 		return array($html, $css, $cssMedia);
 	}
 	
@@ -366,10 +374,10 @@ h1, .h1{
 		CSS MEDIA GENERATION
 	*/
 	
-	function cssMedia()
+	function cssMedia($outputCssMedia)
 	{
 		$cssMedia = '';
-		
+		//var_dump($outputCssMedia);
 		$cssMedia .= '/*
 	RD CSS/JS Framework + Normalize + Blank
 	
@@ -385,9 +393,9 @@ h1, .h1{
 				$cssMedia .= '
 @media all and (max-width: ' . $i . 'px) {
 ';
-				if(isset($css_media_array[$i]))
+				if(isset($outputCssMedia[$i]))
 				{
-					$cssMedia .= $css_media_array[$i];
+					$cssMedia .= $outputCssMedia[$i];
 				}
 				
 				$cssMedia .= '
