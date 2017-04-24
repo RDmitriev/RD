@@ -101,10 +101,6 @@
 ';
 		}
 		
-		$html .= '<div class="line-1">
-						<div class="line-2">
-							<a href="/"><img src="/design/img/img.jpg"></a>
-						</div>';
 		for($y=3; $y <= $count; $y++)
 		{
 			$html .= '
@@ -113,9 +109,6 @@
 							
 						</div>';
 		}
-		
-		$html .= '
-					</div>';
 		
 		return array($html, $css, $cssMedia);
 	}
@@ -300,7 +293,13 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 			if($count == 1)
 			{
 				$html .= '				<div class="rd-col-' . $i . '">
-					' . $outputHtml . '
+					<div class="line-1">
+						<div class="line-2">
+							<a href="/"><img src="/design/img/img.jpg"></a>
+						</div>
+						
+						' . $outputHtml . '
+					</div>
 				</div>
 ';
 			}
@@ -308,7 +307,11 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 			{
 				$html .= '				
 				<div class="rd-col-' . $i . '">
-					
+					<div class="line-1">
+						<div class="line-2">
+							
+						</div>
+					</div>
 				</div>
 ';
 			}
