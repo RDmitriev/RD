@@ -337,8 +337,6 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 	https://github.com/RDmitriev/RD
 */
 
-@import url("media.css");
-
 /*@font-face {
 	font-family: fontName;
 	src: url(fonts/fontName.ttf);
@@ -427,6 +425,8 @@ h1, .h1{
 	<link rel="stylesheet" href="/design/rd/rd-framework.css">
 	<link rel="stylesheet" href="/design/font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" href="/design/style.css">
+	<link rel="stylesheet" href="/design/media.css">
+	
 	<script src="/design/js/jquery.min.js"></script>
 	
 	<link rel="stylesheet" href="/design/js/owl.carousel/assets/owl.carousel.css">
