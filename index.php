@@ -154,7 +154,16 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 	.rd-menu-open-' . $id . '-' . $y . '{
 		display: block;
 	}
-
+	.rd-menu-open-' . $id . '-' . $y . ':after{
+		display: none;
+	}
+	.rd-menu-' . $id . '-' . $y . ' li a{
+		padding: 0;
+	}
+	.rd-menu-' . $id . '-' . $y . ' li{
+		width:100%;
+		text-align:center;
+	}
 ';
 		}
 		
