@@ -6,49 +6,32 @@
 	https://github.com/RDmitriev/RD
 */
 
-$(window).load(function() {
-	$(".rd-menu-open-1").click(function() {
-		$(".rd-menu-1").toggleClass("showMenu");
+jQuery(window).load(function() {
+	jQuery(".rd-menu-open-1").click(function() {
+		jQuery(".rd-menu-1").toggleClass("showMenu");
 	});
 	
-	$(".rd-menu-open-2").click(function() {
-		$(".rd-menu-2").toggleClass("showMenu");
+	jQuery(".rd-menu-open-2").click(function() {
+		jQuery(".rd-menu-2").toggleClass("showMenu");
 	});
 	
-	$('.carousel-1').owlCarousel({
-		items:1,
-		loop:true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		animateOut: 'fadeOut'
+	jQuery('.carousel-1').slick({
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		lazyLoad: 'ondemand',
+		autoplay: true,
+		autoplaySpeed: 7000
+		//variableWidth: true
 	});
 	
-	$('.carousel-2').owlCarousel({
-		items:3,
-		loop:false,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		dots:true,
-		autoWidth:false,
-		margin:10,
-		
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-				autoWidth:false
-			},
-			500:{
-				items:1
-			},
-			1000:{
-				items:4
-			},
-			1238:{
-				items:4
-			}
-		}
+	jQuery('.carousel-2').slick({
+		slidesToShow: 3,
+		arrows: false,
+		dots: true,
+		lazyLoad: 'ondemand',
+		autoplay: true,
+		autoplaySpeed: 7000
+		//variableWidth: true
 	});
 });
