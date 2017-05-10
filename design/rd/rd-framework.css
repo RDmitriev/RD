@@ -455,30 +455,49 @@
 	Menu
 */
 
-[class^="rd-menu"]{
+[class^="rd-menu"] {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
 	text-align: justify;
 }
-[class^="rd-menu"]:after{
+[class^="rd-menu"]:after {
 	content: '';
     display: inline-block;
     width: 100%;
 }
-[class^="rd-menu"]>li{
+[class^="rd-menu"]>li {
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
+	margin: 0;
 }
-[class^="rd-menu"]>li:first-child a{
+[class^="rd-menu"]>li:first-child a {
 	padding-left: 0;
 }
-[class^="rd-menu"]>li:last-child a{
+[class^="rd-menu"]>li:last-child a {
 	padding-right: 0;
 }
-[class^="rd-menu"]>li>a{
+[class^="rd-menu"]>li>a {
+	display: block;
+}
+
+[class^="rd-menu"]>li>ul {
+	display:none;
+	position: absolute;
+	top: 37px;
+	left: 0;
+	list-style:none;
+	text-align:left;
+	margin:0;
+	z-index:666;
+	padding: 16px;
+}
+[class^="rd-menu"]>ul li{
+	padding:10px;
+}
+[class^="rd-menu"]>li:hover>ul {
 	display: block;
 }
 
