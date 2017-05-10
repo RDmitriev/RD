@@ -438,10 +438,6 @@ h1, .h1{
 	
 	<script src="/design/js/jquery.min.js"></script>
 	
-	<link rel="stylesheet" href="/design/js/owl.carousel/assets/owl.carousel.css">
-	<link rel="stylesheet" href="/design/js/owl.carousel/assets/owl.theme.default.min.css">
-	<script src="/design/js/owl.carousel/owl.carousel.min.js"></script>
-	
 	<link rel="stylesheet" href="/design/js/slick/slick.css">
 	<link rel="stylesheet" href="/design/js/slick/slick-theme.css">
 	<script src="/design/js/slick/slick.min.js"></script>
