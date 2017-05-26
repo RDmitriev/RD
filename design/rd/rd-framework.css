@@ -825,7 +825,10 @@
 	background-position: 50% 50%;
 	margin-bottom: 8px;
 }
-
+.rd-image-title {
+	padding-top: 2px;
+	text-align: center;
+}
 @media all and (max-width: 500px) {
 	.rd-image{
 		min-height: 300px;
