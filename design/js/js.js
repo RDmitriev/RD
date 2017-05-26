@@ -26,12 +26,22 @@ jQuery(window).load(function() {
 	});
 	
 	jQuery('.carousel-2').slick({
-		slidesToShow: 3,
-		arrows: false,
-		dots: true,
+		slidesToShow: 4,
+		arrows: true,
+		dots: false,
 		lazyLoad: 'ondemand',
 		autoplay: true,
-		autoplaySpeed: 7000
-		//variableWidth: true
+		autoplaySpeed: 7000,
+		responsive: [
+		{
+			breakpoint: 700,
+				settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				arrows: false,
+				dots: false
+			}
+		}
+		]
 	});
 });
