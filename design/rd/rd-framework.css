@@ -482,7 +482,6 @@
 [class^="rd-menu"]>li>a {
 	display: block;
 }
-
 [class^="rd-menu"]>li>ul {
 	display:none;
 	position: absolute;
@@ -500,10 +499,28 @@
 [class^="rd-menu"]>li:hover>ul {
 	display: block;
 }
+[class^="rd-menu-open"] {
+	font-size: 30px;
+	padding: 10px !important;
+}
+[class^="rd-menu-open"]:after {
+	display:none;
+}
 
 @media all and (max-width: 500px) {
 	[class^="rd-menu"]{
-		display:none;
+		display: none;
+	}
+	[class^="rd-menu"]>li{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	[class^="rd-menu"]>li>a {
+		padding: 10px !important;
+	}
+	[class^="rd-menu-open"] {
+		display: block !important;
 	}
 }
 
