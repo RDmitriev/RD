@@ -290,8 +290,8 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 		$css .= '.rd-box-' . $id . '{' . $boxStyle . '}
 ';
 		$html .= '
-	<div class="rd-wrapper">
-		<div class="rd-box-' . $id . '">
+	<div class="rd-box-' . $id . '">
+		<div class="rd-wrapper">
 			<div class="rd-row rd-margin rd-padding">
 ';
 		
