@@ -8,16 +8,12 @@
 	*/
 	
 	$css = '';
-	$css_media = '';
 	$html = '';
-	
-	$css_media_array = array();
 	
 	if(isset($_POST['generate']))
 	{
 		$outputHtml2 = '';
 		$outputCss = '';
-		$outputCssMedia = array();
 		
 		foreach($_POST['part'] as $key => $val)
 		{
@@ -32,7 +28,6 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['menu'][$key])
@@ -41,7 +36,6 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['ul'][$key])
@@ -50,7 +44,6 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia = $output['2'];
 				}
 				
 				if($_POST['form'][$key])
@@ -59,7 +52,6 @@
 					
 					$outputHtml .= $output['0'];
 					$outputCss .= $output['1'];
-					$outputCssMedia = $output['2'];
 				}
 				
 				$output = row($key, $outputHtml, $val);
@@ -71,11 +63,10 @@
 		
 		$html = html($outputHtml2);
 		$css = css($outputCss);
-		$cssMedia = cssMedia($outputCssMedia);
 		
 		file_put_contents('index.html', $html);
 		file_put_contents('design/style.css', $css);
-		file_put_contents('design/media.css', $cssMedia);
+		file_put_contents('design/media.css', cssMedia());
 		
 		unlink('index.php');
 		
@@ -86,7 +77,6 @@
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = array();
 		
 		$textStyle = '
 	/* color: #cccccc; */
@@ -110,14 +100,13 @@
 						</div>';
 		}
 		
-		return array($html, $css, $cssMedia);
+		return array($html, $css);
 	}
 	
 	function menu($id, $count)
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = array();
 		
 		for($y=1; $y <= $count; $y++)
 		{
@@ -147,38 +136,15 @@
 					<ul class="rd-menu-' . $id . '-' . $y . ' rd-padding">
 						<li><a href="/">Пункт</a></li>
 					</ul>';
-
-$cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
-		display: none;
-	}
-	.rd-menu-open-' . $id . '-' . $y . '{
-		display: block;
-	}
-	.rd-menu-open-' . $id . '-' . $y . ':after{
-		display: none;
-	}
-	.rd-menu-' . $id . '-' . $y . ' li a{
-		padding: 0;
-	}
-	.rd-menu-' . $id . '-' . $y . ' li{
-		width:100%;
-		text-align:center;
-	}
-';
 		}
 		
-		$cssMedia[700] .= '	.showMenu{
-		display:block;
-	}';
-		
-		return array($html, $css, $cssMedia);
+		return array($html, $css);
 	}
 	
 	function ul($id, $count)
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = array();
 		
 		for($i=1; $i <= $count; $i++)
 		{
@@ -204,14 +170,13 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 					</ul>';
 		}
 		
-		return array($html, $css, $cssMedia);
+		return array($html, $css);
 	}
 	
 	function form($id, $count)
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = array();
 		
 		for($i=1; $i <= $count; $i++)
 		{
@@ -269,14 +234,13 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 					</form>';
 		}
 		
-		return array($html, $css, $cssMedia);
+		return array($html, $css);
 	}
 	
 	function row($id, $outputHtml, $cols)
 	{
 		$html = '';
 		$css = '';
-		$cssMedia = array();
 		
 		$count = 0;
 		
@@ -331,7 +295,7 @@ $cssMedia[700] .= '	.rd-menu-' . $id . '-' . $y . '{
 	</div>
 ';
 
-		return array($html, $css, $cssMedia);
+		return array($html, $css);
 	}
 	
 	function css($outputCss)
@@ -384,11 +348,9 @@ h1, .h1{
 		CSS MEDIA GENERATION
 	*/
 	
-	function cssMedia($outputCssMedia)
+	function cssMedia()
 	{
-		$cssMedia = '';
-		//var_dump($outputCssMedia);
-		$cssMedia .= '/*
+		$cssMedia = '/*
 	RD CSS/JS Framework + Normalize + Blank
 	
 	Powered by Ruslan Dmitriev
@@ -402,13 +364,7 @@ h1, .h1{
 			{
 				$cssMedia .= '
 @media all and (max-width: ' . $i . 'px) {
-';
-				if(isset($outputCssMedia[$i]))
-				{
-					$cssMedia .= $outputCssMedia[$i];
-				}
-				
-				$cssMedia .= '
+	
 }
 ';
 			}
