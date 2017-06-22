@@ -836,7 +836,7 @@
 
 .rd-image {
 	max-width: 100%;
-	min-height: 200px;
+	height: 200px;
 	text-align: center;
 	background-size:cover;
 	background-position: 50% 50%;
@@ -848,6 +848,6 @@
 }
 @media all and (max-width: 500px) {
 	.rd-image{
-		min-height: 300px;
+		height: 300px;
 	}
 }
