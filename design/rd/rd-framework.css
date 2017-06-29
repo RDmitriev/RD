@@ -493,8 +493,8 @@
 	z-index:666;
 	padding: 16px;
 }
-[class^="rd-menu"]>ul li{
-	padding:10px;
+[class^="rd-menu"]>li>ul>li>a{
+	white-space: nowrap;
 }
 [class^="rd-menu"]>li:hover>ul {
 	display: block;
@@ -519,8 +519,8 @@
 	[class^="rd-menu"]>li>a {
 		padding: 10px !important;
 	}
-	[class^="rd-menu-open"] {
-		display: block !important;
+	[class^="rd-menu"]>li:hover>ul {
+		display: none;
 	}
 }
 
