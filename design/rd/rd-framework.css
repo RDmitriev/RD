@@ -500,6 +500,9 @@
 	display: block;
 }
 [class^="rd-menu-open"] {
+	display: none;
+	cursor:pointer;
+	padding:10px 0;
 	font-size: 30px;
 	padding: 10px !important;
 }
@@ -507,7 +510,7 @@
 	display:none;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
 	[class^="rd-menu"]{
 		display: none;
 	}
@@ -521,6 +524,9 @@
 	}
 	[class^="rd-menu"]>li:hover>ul {
 		display: none;
+	}
+	[class^="rd-menu-open"] {
+		display: block;
 	}
 }
 
