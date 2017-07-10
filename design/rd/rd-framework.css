@@ -226,6 +226,14 @@
 .labelContainer:last-child{
 	margin-bottom: 0;
 }
+.labelContainerGroup{
+	position: relative;
+}
+.labelContainerAdd{
+	position: absolute;
+    top: 8px;
+    right: 8px;
+}
 [class^="rd-form"] .label label{
 	position: absolute;
     top: 7px;
