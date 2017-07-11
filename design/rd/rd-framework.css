@@ -226,6 +226,9 @@
 .labelContainer:last-child{
 	margin-bottom: 0;
 }
+.labelContainer:first-child{
+	margin-bottom: 16px;
+}
 .labelContainerGroup{
 	position: relative;
 }
