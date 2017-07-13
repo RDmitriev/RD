@@ -105,7 +105,8 @@
 	background-color: #e5e5e5;
 }
 
-.rd-zebra tr:nth-child(odd):not(:first-child), .rd-zebra tbody tr:first-child {
+.rd-zebra tr:nth-child(odd):not(:first-child),
+.rd-zebra tbody tr:first-child {
 	background-color: #f5f5f5;
 }
 
@@ -248,7 +249,8 @@
 	padding:0 5px;
 	font-family: 'Noto Sans', sans-serif;
 }
-[class^="rd-form"] .label input, [class^="rd-form"] .label textarea{
+[class^="rd-form"] .label input,
+[class^="rd-form"] .label textarea{
 	padding:10px !important;
 }
 [class^="rd-form"] .label input:focus ~ label,
@@ -310,7 +312,8 @@
 .uploadPreview>div:hover a.delete{
 	display: block;
 }
-.uploadPreview.one>div, .uploadPreview.one>div>img{
+.uploadPreview.one>div,
+.uploadPreview.one>div>img{
 	height: auto;
 }
 
@@ -364,6 +367,7 @@
 /*
 	Information
 */
+
 [class^="rd-info"] {
 	display: block;
 	border: 0 !important;
@@ -826,10 +830,6 @@
 .rd-row-10x>* {width: 10%;}
 .rd-row-11x>* {width: 9.09090%;}
 .rd-row-12x>* {width: 8.33333%;}
-
-@media all and (max-width: 1000px) {
-	
-}
 
 .rd-margin{
 	margin-right: -16px;
