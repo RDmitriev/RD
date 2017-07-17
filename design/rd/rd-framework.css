@@ -555,14 +555,11 @@
 	font-size: 0;
 }
 
-.rd-row>[class^="rd-col-"]{
+[class^="rd-row"]>*{
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
-}
-
-.rd-row [class^="rd-line-"]{
 	margin-bottom: 8px;
 }
 
@@ -810,14 +807,6 @@
 /*
 	Grid auto
 */
-
-[class^="rd-row-"]>*{
-	display: inline-block;
-    vertical-align: top;
-	font-size: initial;
-	position: relative;
-	margin-bottom: 8px;
-}
 
 .rd-row-1x>* {width: 100%;}
 .rd-row-2x>* {width: 50%;}
