@@ -816,6 +816,7 @@
     vertical-align: top;
 	font-size: initial;
 	position: relative;
+	margin-bottom: 8px;
 }
 
 .rd-row-1x>* {width: 100%;}
@@ -843,11 +844,7 @@
 	padding: 16px;
 }
 
-.rd-row [class^="rd-line-"]{
-	margin-bottom: 8px;
-}
-
-.rd-row img{
+[class^="rd-row-"] img{
 	max-width:100%;
 }
 
