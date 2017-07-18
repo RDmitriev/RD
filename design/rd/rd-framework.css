@@ -6,6 +6,10 @@
 	https://github.com/RDmitriev/RD
 */
 
+*{
+	transition:1s all;
+}
+
 /*
 	Wrapper
 */
@@ -833,7 +837,7 @@
 	padding: 16px;
 }
 
-[class^="rd-row-"] img{
+[class^="rd-row"] img{
 	max-width:100%;
 }
 
