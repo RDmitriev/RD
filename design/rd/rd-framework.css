@@ -6,10 +6,6 @@
 	https://github.com/RDmitriev/RD
 */
 
-*{
-	transition:1s all;
-}
-
 /*
 	Wrapper
 */
@@ -564,7 +560,6 @@
     vertical-align: top;
 	font-size: initial;
 	position: relative;
-	margin-bottom: 8px;
 }
 
 .rd-col-1 {width: 8.33333%;}
