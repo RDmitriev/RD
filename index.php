@@ -124,7 +124,7 @@
 	display: none;
 	cursor:pointer;
 	font-size:24px;
-	color:#0091d9;
+	color:#000;
 	padding:10px 0;
 }
 
