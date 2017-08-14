@@ -105,8 +105,7 @@
 	background-color: #e5e5e5;
 }
 
-.rd-zebra tr:nth-child(odd):not(:first-child),
-.rd-zebra tbody tr:first-child {
+.rd-zebra tr:nth-child(odd):not(:first-child), .rd-zebra tbody tr:first-child {
 	background-color: #f5f5f5;
 }
 
@@ -153,7 +152,8 @@
 [class^="rd-form"] select {
 	outline: none;
 	display: block;
-	font: 12px 'Noto Sans', Arial;
+	font-size: 12px;
+	font-family: 'Noto Sans', Arial;
 	color: #00bcd4;
 }
 
@@ -206,7 +206,7 @@
 [class^="rd-form"] input[type=button]:hover,
 [class^="rd-form"] button:hover {
 	opacity: 0.9;
-	background:#B2EBF2;
+	background: #B2EBF2;
 	background: #00bcd4;
     color: #fff;
 }
@@ -227,31 +227,19 @@
 .labelContainer:last-child{
 	margin-bottom: 0;
 }
-.labelContainer:first-child{
-	margin-bottom: 16px;
-}
-.labelContainerGroup{
-	position: relative;
-}
-.labelContainerAdd{
-	position: absolute;
-    top: 8px;
-    right: 8px;
-}
 [class^="rd-form"] .label label{
 	position: absolute;
     top: 7px;
 	left: 5px;
-	pointer-events:none;
+	pointer-events: none;
 	transition: all ease 0.2s;
-	font-size:14px;
-	color:#b0b0b0;
-	padding:0 5px;
+	font-size: 14px;
+	color: #b0b0b0;
+	padding: 0 5px;
 	font-family: 'Noto Sans', sans-serif;
 }
-[class^="rd-form"] .label input,
-[class^="rd-form"] .label textarea{
-	padding:10px !important;
+[class^="rd-form"] .label input, [class^="rd-form"] .label textarea{
+	padding: 10px !important;
 }
 [class^="rd-form"] .label input:focus ~ label,
 [class^="rd-form"] .label input:valid ~ label,
@@ -276,7 +264,7 @@
 	width: 100%;
 }
 .uploadBox input{
-	display:none;
+	display: none;
 }
 .uploadBox i{
 	color: #4DC7EC;
@@ -306,14 +294,13 @@
 	right: 0;
 	font-size: 25px;
 	background-color: #00BCD4;
-	color:#fff;
+	color: #fff;
 	padding: 8px;
 }
 .uploadPreview>div:hover a.delete{
 	display: block;
 }
-.uploadPreview.one>div,
-.uploadPreview.one>div>img{
+.uploadPreview.one>div, .uploadPreview.one>div>img{
 	height: auto;
 }
 
@@ -367,7 +354,6 @@
 /*
 	Information
 */
-
 [class^="rd-info"] {
 	display: block;
 	border: 0 !important;
@@ -408,7 +394,7 @@
 }
 
 [class^="rd-ul"] ul {
-	list-style:none;
+	list-style: none;
 }
 
 [class^="rd-ul"] ul li {
@@ -424,12 +410,8 @@
 */
 
 .rd-pagination {
-	margin:0;
-	padding:0;
-	/*-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;*/
+	margin: 0;
+	padding: 0;
 	user-select: none;
 }
 
@@ -440,30 +422,30 @@
 	border-right: 1px solid #d8d8d8;
 	text-decoration: none;
 	color: #262626;
-	margin:0;
+	margin: 0;
 	padding: 8px;
 	font-size: 16px;
 }
 
 .rd-pagination a:hover {
-	color:#262626;
-	background:#e5e5e5;
+	color: #262626;
+	background: #e5e5e5;
 }
 
 .rd-pagination a.active,
 .rd-pagination a.disabled {
 	pointer-events: none;
 	cursor: default;
-	background:#e5e5e5;
+	background: #e5e5e5;
 }
 
 .rd-pagination a:first-child {
-	border-radius:5px 0 0 5px;
-	border-left:1px solid #d8d8d8;
+	border-radius: 5px 0 0 5px;
+	border-left: 1px solid #d8d8d8;
 }
 
 .rd-pagination a:last-child {
-	border-radius:0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
 }
 
 /*
@@ -498,34 +480,31 @@
 	display: block;
 }
 [class^="rd-menu"]>li>ul {
-	display:none;
+	display: none;
 	position: absolute;
 	top: 37px;
 	left: 0;
-	list-style:none;
-	text-align:left;
-	margin:0;
-	z-index:666;
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	z-index: 666;
 	padding: 16px;
 }
-[class^="rd-menu"]>li>ul>li>a{
-	white-space: nowrap;
+[class^="rd-menu"]>ul li{
+	padding: 10px;
 }
 [class^="rd-menu"]>li:hover>ul {
 	display: block;
 }
 [class^="rd-menu-open"] {
-	display: none;
-	cursor:pointer;
-	padding:10px 0;
 	font-size: 30px;
 	padding: 10px !important;
 }
 [class^="rd-menu-open"]:after {
-	display:none;
+	display: none;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 500px) {
 	[class^="rd-menu"]{
 		display: none;
 	}
@@ -537,11 +516,8 @@
 	[class^="rd-menu"]>li>a {
 		padding: 10px !important;
 	}
-	[class^="rd-menu"]>li:hover>ul {
-		display: none;
-	}
 	[class^="rd-menu-open"] {
-		display: block;
+		display: block !important;
 	}
 }
 
@@ -555,11 +531,15 @@
 	font-size: 0;
 }
 
-[class^="rd-row"]>*{
+.rd-row>[class^="rd-col-"]{
 	display: inline-block;
     vertical-align: top;
 	font-size: initial;
 	position: relative;
+}
+
+.rd-row [class^="rd-line-"]{
+	margin-bottom: 8px;
 }
 
 .rd-col-1 {width: 8.33333%;}
@@ -574,6 +554,25 @@
 .rd-col-10 {width: 83.33333%;}
 .rd-col-11 {width: 91.66667%;}
 .rd-col-12 {width: 100%;}
+
+@media all and (max-width: 1280px){
+	.rd-col-1280-center {text-align: center !important;}
+	.rd-col-1280-right {text-align: right !important;}
+	.rd-col-1280-left {text-align: left !important;}
+	.rd-col-1280-0 {display: none !important;}
+	.rd-col-1280-1 {width: 8.33333%;}
+	.rd-col-1280-2 {width: 16.66667%;}
+	.rd-col-1280-3 {width: 25%;}
+	.rd-col-1280-4 {width: 33.33333%;}
+	.rd-col-1280-5 {width: 41.66667%;}
+	.rd-col-1280-6 {width: 50%;}
+	.rd-col-1280-7 {width: 58.33333%;}
+	.rd-col-1280-8 {width: 66.66667%;}
+	.rd-col-1280-9 {width: 75%;}
+	.rd-col-1280-10 {width: 83.33333%;}
+	.rd-col-1280-11 {width: 91.66667%;}
+	.rd-col-1280-12 {width: 100%;}
+}
 
 @media all and (max-width: 1200px){
 	.rd-col-1200-center {text-align: center !important;}
@@ -807,6 +806,13 @@
 	Grid auto
 */
 
+[class^="rd-row-"]>*{
+	display: inline-block;
+    vertical-align: top;
+	font-size: initial;
+	position: relative;
+}
+
 .rd-row-1x>* {width: 100%;}
 .rd-row-2x>* {width: 50%;}
 .rd-row-3x>* {width: 33.33333%;}
@@ -820,6 +826,10 @@
 .rd-row-11x>* {width: 9.09090%;}
 .rd-row-12x>* {width: 8.33333%;}
 
+@media all and (max-width: 1000px) {
+	
+}
+
 .rd-margin{
 	margin-right: -16px;
 }
@@ -832,15 +842,19 @@
 	padding: 16px;
 }
 
-[class^="rd-row"] img{
-	max-width:100%;
+.rd-row [class^="rd-line-"]{
+	margin-bottom: 8px;
+}
+
+.rd-row img{
+	max-width: 100%;
 }
 
 .rd-image {
 	max-width: 100%;
-	height: 200px;
+	min-height: 200px;
 	text-align: center;
-	background-size:cover;
+	background-size: cover;
 	background-position: 50% 50%;
 	margin-bottom: 8px;
 }
@@ -850,6 +864,6 @@
 }
 @media all and (max-width: 500px) {
 	.rd-image{
-		height: 300px;
+		min-height: 300px;
 	}
 }
