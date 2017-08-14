@@ -121,11 +121,7 @@
 	
 }
 .rd-menu-open-' . $id . '-' . $y . '{
-	display: none;
-	cursor:pointer;
-	font-size:24px;
-	color:#0091d9;
-	padding:10px 0;
+
 }
 
 ';
@@ -329,9 +325,6 @@ h1, .h1{
 	color:#000;
 	font-size:21px;
 	font-family: Arial;
-}
-*{
-	word-wrap: break-word !important;
 }
 [class^="box-"]{
 	padding:50px 0;
