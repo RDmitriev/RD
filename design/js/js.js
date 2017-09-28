@@ -39,7 +39,7 @@ jQuery(window).load(function() {
 				slidesToShow: 2,
 				slidesToScroll: 2,
 				arrows: false,
-				dots: false
+				dots: true
 			}
 		}
 		]
