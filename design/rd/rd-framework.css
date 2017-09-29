@@ -223,6 +223,7 @@
 .labelContainer{
 	position: relative;
 	margin-bottom: 16px;
+	display: block;
 }
 .labelContainer:last-child{
 	margin-bottom: 0;
