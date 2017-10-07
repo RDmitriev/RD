@@ -222,11 +222,13 @@
 
 .labelContainer{
 	position: relative;
-	margin-bottom: 16px;
 	display: block;
 }
 .labelContainer:last-child{
 	margin-bottom: 0;
+}
+.labelContainer:first-child{
+	margin-bottom: 16px;
 }
 [class^="rd-form"] .label label{
 	position: absolute;
