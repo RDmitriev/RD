@@ -176,6 +176,7 @@
 [class^="rd-form"] textarea,
 [class^="rd-form"] select,
 [class^="rd-form"] input[type=text],
+[class^="rd-form"] input[type=month],
 [class^="rd-form"] input[type=email],
 [class^="rd-form"] input[type=password],
 [class^="rd-form"] input[type=date],
@@ -243,7 +244,7 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 [class^="rd-form"] .label input, [class^="rd-form"] .label textarea{
-	padding: 10px !important;
+	padding: 8px !important;
 }
 [class^="rd-form"] .label input:focus ~ label,
 [class^="rd-form"] .label input:valid ~ label,
@@ -328,31 +329,31 @@
 	color: #fff;
 }
 .rd-btn-inactive {
-	color: #fff;
+	color: #fff !important;
 	background-color: #0097A7 !important;
 }
 .rd-btn-active {
-	color: #fff;
+	color: #fff !important;
 	background-color: #006064 !important;
 }
 .rd-btn-success {
-	color: #fff;
+	color: #fff !important;
 	background-color: #53a93f !important;
 }
 
 .rd-btn-danger {
-	color: #fff;
+	color: #fff !important;
 	background-color: #dd4b39 !important;
 }
 
 .rd-btn-blue {
-	color: #fff;
+	color: #fff !important;
 	background-color: #427fed !important;
 }
 
 .rd-btn-xs {
-	padding: 8px;
-	font-size: 12px;
+	padding: 10px !important;
+	font-size: 12px !important;
 }
 
 /*
@@ -376,7 +377,9 @@
 	color: #fff;
 	background-color: #dd4b39 !important;
 }
-
+.rd-info-danger a{
+	color: #fff;
+}
 .rd-info-blue {
 	color: #fff;
 	background-color: #427fed !important;
