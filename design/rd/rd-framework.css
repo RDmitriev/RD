@@ -155,8 +155,6 @@
 [class^="rd-form"] select {
 	outline: none;
 	display: block;
-	font-size: 12px;
-	font-family: 'Noto Sans', Arial;
 	color: #00bcd4;
 }
 
@@ -240,10 +238,8 @@
 	left: 5px;
 	pointer-events: none;
 	transition: all ease 0.2s;
-	font-size: 14px;
 	color: #b0b0b0;
 	padding: 0 5px;
-	font-family: 'Noto Sans', sans-serif;
 }
 [class^="rd-form"] .label input,
 [class^="rd-form"] .label textarea{
@@ -435,7 +431,6 @@
 	color: #262626;
 	margin: 0;
 	padding: 8px;
-	font-size: 16px;
 }
 
 .rd-pagination a:hover {
