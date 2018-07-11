@@ -866,6 +866,10 @@
 	background-repeat: no-repeat;
 	margin-bottom: 8px;
 }
+.rd-image-background{
+    position: absolute;
+	opacity: 0;
+}
 .rd-image-title {
 	padding-top: 2px;
 	text-align: center;
